@@ -11,9 +11,9 @@
           <img src="https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2012/08/023.jpg?fit=600%2C393&ssl=1">
         </div>
         <ul class="menu">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Nosso Projeto</a></li>
-          <li><a href="#">Estatísticas</a></li>
+          <li><a href="https://projetodoanoletivo.github.io/anoletivo/index.html">Início</a></li>
+          <li><a href="https://projetodoanoletivo.github.io/anoletivo/page2.html">Nosso Projeto</a></li>
+          <li><a href="https://projetodoanoletivo.github.io/anoletivo/page3.html">Estatísticas</a></li>
         </ul>
       </nav>
 </body>
