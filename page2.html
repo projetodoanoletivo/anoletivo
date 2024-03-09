@@ -17,14 +17,97 @@
         </ul>
       </nav>
 </body>
-    <style> 
-   .logo img {
-            height: 30px;
+     <style>
+        body {
+            margin: 10; 
+            /* Adicionando espaço em branco no topo e na lateral */
+            padding: 0; 
+            /* Removendo o preenchimento padrão do navegador*/
+            font-family: Arial, sans-serif; 
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            /* Cor do texto */
+            position: fixed;
+            /Posição fixada/
+            left: -30px;
+            /Esquerda da tela (pixels)/
+            top: 0;
+            /Topo da página (pixels)/
+            height: 100%;
+            /* Altura total do viewport*/
+            width: 250px;
+            /Largura definida em pixels/
+            display: flex;
+            /Propriedade para criar um container Flexbox/
+            flex-direction: column;
+            /Orientação dos itens no eixo vertical/
+            justify-content: flex-start;
+            /* Modificado para alinhar no topo */
+            align-items: center;
+            /Alinhamento horizontal dos itens na linha superior/
+            padding: 30px;
+            /Espaçamento interno entre os itens/
+            box-sizing: border-box;
+            /Permite que a largura e altura inclua o espacamento externo (padding) e borda (border)./
+        }
+
+        .logo img {
+            height: 40px;
             /Tamanho da Imagem da logo/
             border-radius: 400px;
             /Arredondamento do Logotipo/
             margin-right: 80px;
             /Espaço entre o logotipo e a direita/
+            margin-bottom: 80px;
+            /Espaço abaixo do logotipo/
+            
+        }
+
+        .menu {
+            list-style: none;
+            /Remove a marcação de lista por defeito/
+            margin-top: 80px;
+            /* Espaçamento superior do menu*/
+            margin: 30px;
+            /Remove o espaçamento padrão entre as tags <li>/
+            padding: 0px;
+            /Remove o espaçamento padrão entre as tags <li>/
+            display: flex; 
+            /Cria um container Flexbox para organizar os items/
+            flex-direction: column;
+            /Organiza os items no sentido da coluna/
+        }
+
+        .menu li {
+            margin-bottom: 40px;
+            /* Modificado para espaçamento na parte inferior de cada item */
+            font-size: 25px;
+            padding-left: 30px;
+            /* Adiciona recuo à esquerda em todos os itens do Menu.*/
+            white-space:  nowrap;
+            /* Impede que haja quebra automática de palavras se não houver espaço suficiente.*/
+            margin-top: 20px;
+            
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            /Remover underline do link/
+            transition: color 0.3s;
+            /Alteração suave do color ao passar por cima/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /Fonte da fonte dos itens do Menu/
+        }
+
+        .menu li a:hover {
+            color: rgb(194, 2, 2);
+            /* Cor do Texto quando passada por cima */
+        }
+
         .logo img {
             animation: fadeIn 3s ease;
             /* Animação de entrada (fade) com duração de 3 segundos */
@@ -44,6 +127,6 @@
                 /* Retorna ao original após a an  imação */
             }
         }
-    
     </style>
+</body>
 </html>
