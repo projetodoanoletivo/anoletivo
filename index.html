@@ -4,129 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2012/08/023.jpg?fit=600%2C393&ssl=1">
-        </div>
-        <ul class="menu">
-          <li><a href="https://projetodoanoletivo.github.io/anoletivo/#">Início</a></li>
-          <li><a href="https://projetodoanoletivo.github.io/anoletivo/page2.html">Nosso Projeto</a></li>
-          <li><a href="https://projetodoanoletivo.github.io/anoletivo/page3.html">Estatísticas</a></li>
-        </ul>
-      </nav>
-</body>
     <style>
         body {
-            margin: 10; 
-            /* Adicionando espaço em branco no topo e na lateral */
-            padding: 0; 
-            /* Removendo o preenchimento padrão do navegador*/
-            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
         .navbar {
             background-color: #333;
             color: #fff;
-            /* Cor do texto */
             position: fixed;
-            /Posição fixada/
-            left: -30px;
-            /Esquerda da tela (pixels)/
             top: 0;
-            /Topo da página (pixels)/
-            height: 100%;
-            /* Altura total do viewport*/
-            width: 250px;
-            /Largura definida em pixels/
+            left: 0;
+            width: 100%;
             display: flex;
-            /Propriedade para criar um container Flexbox/
-            flex-direction: column;
-            /Orientação dos itens no eixo vertical/
-            justify-content: flex-start;
-            /* Modificado para alinhar no topo */
+            justify-content: space-between;
             align-items: center;
-            /Alinhamento horizontal dos itens na linha superior/
-            padding: 30px;
-            /Espaçamento interno entre os itens/
+            padding: 10px 30px;
             box-sizing: border-box;
-            /Permite que a largura e altura inclua o espacamento externo (padding) e borda (border)./
+            z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
         }
 
         .logo img {
-            height: 60px;
-            /Tamanho da Imagem da logo/
-            border-radius: 400px;
-            /Arredondamento do Logotipo/
-            margin-right: 80px;
-            /Espaço entre o logotipo e a direita/
-            margin-bottom: 80px;
-            /Espaço abaixo do logotipo/
-            
+            height: 40px; /* Reduzido o tamanho da logo */
+            border-radius: 50%; /* Alterado o arredondamento da logo */
         }
 
         .menu {
             list-style: none;
-            /Remove a marcação de lista por defeito/
-            margin-top: 80px;
-            /* Espaçamento superior do menu*/
-            margin: 30px;
-            /Remove o espaçamento padrão entre as tags <li>/
-            padding: 0px;
-            /Remove o espaçamento padrão entre as tags <li>/
-            display: flex; 
-            /Cria um container Flexbox para organizar os items/
-            flex-direction: column;
-            /Organiza os items no sentido da coluna/
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .menu li {
-            margin-bottom: 40px;
-            /* Modificado para espaçamento na parte inferior de cada item */
-            font-size: 25px;
-            padding-left: 30px;
-            /* Adiciona recuo à esquerda em todos os itens do Menu.*/
-            white-space:  nowrap;
-            /* Impede que haja quebra automática de palavras se não houver espaço suficiente.*/
-            margin-top: 20px;
-            
+            margin-right: 20px;
         }
 
         .menu li a {
             color: #fff;
             text-decoration: none;
-            /Remover underline do link/
+            font-size: 18px;
             transition: color 0.3s;
-            /Alteração suave do color ao passar por cima/
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            /Fonte da fonte dos itens do Menu/
         }
 
         .menu li a:hover {
             color: rgb(194, 2, 2);
-            /* Cor do Texto quando passada por cima */
-        }
-
-        .logo img {
-            animation: fadeIn 3s ease;
-            /* Animação de entrada (fade) com duração de 3 segundos */
-
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-                /* Deslocação no eixo Y negativo */
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-                /* Retorna ao original após a an  imação */
-            }
         }
     </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/senac.png?itok=tg53Ze-q ">
+        </div>
+        <ul class="menu">
+            <li><a href="https://projetodoanoletivo.github.io/anoletivo/#">Início</a></li>
+            <li><a href="https://projetodoanoletivo.github.io/anoletivo/page2.html">Nosso Projeto</a></li>
+            <li><a href="https://projetodoanoletivo.github.io/anoletivo/page3.html">Estatísticas</a></li>
+        </ul>
+    </nav>
 </body>
-</html>
