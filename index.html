@@ -5,81 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* Alterado para alinhar os itens verticalmente */
-  height: 100vh;
-}
-
-.blue-box {
-  background-color: #e0f2f1;
-  padding: 30px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px; /* Adicionado espaçamento entre as caixas */
-}
-
-.yellow-box {
-  background-color: #ffea00; /* Cor amarela */
-  padding: 30px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-        
-.blue-box h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.blue-box p {
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: justify;
-}
-        
-        
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Cor de fundo da página */
         }
 
-        .navbar {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Alinha os itens verticalmente */
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #e0f2f1; /* Cor de fundo azul claro */
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Adiciona espaçamento entre as caixas */
+            box-sizing: border-box; /* Garante que a largura da caixa inclua o preenchimento e a borda */
+        }
+
+        .blue-box {
+            background-color: #e0f2f1; /* Cor de fundo azul claro */
+        }
+
+        .yellow-box {
+            background-color: #ffffcc; /* Cor de fundo amarelo claro */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        nav {
             background-color: #333;
             color: #fff;
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            box-sizing: border-box;
-            z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+            padding: 10px 0;
+            text-align: center;
         }
 
         .logo img {
-            height: 40px; /* Reduzido o tamanho da logo */
-            border-radius: 50%; /* Alterado o arredondamento da logo */
+            height: 40px;
+            border-radius: 50%;
         }
 
         .menu {
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
         }
 
         .menu li {
+            display: inline;
             margin-right: 20px;
         }
 
@@ -96,9 +88,9 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav>
         <div class="logo">
-            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/senac.png?itok=tg53Ze-q ">
+            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/senac.png?itok=tg53Ze-q">
         </div>
         <ul class="menu">
             <li><a href="https://projetodoanoletivo.github.io/anoletivo/#">Início</a></li>
@@ -106,19 +98,17 @@
             <li><a href="https://projetodoanoletivo.github.io/anoletivo/page3.html">Estatísticas</a></li>
         </ul>
     </nav>
-<div class="container">
-  <div class="blue-box">
-   <h1>Projeto do Ano Letivo: Impacto da Desigualdade Social na Criminalidade</h1>
-    <p><strong>Introdução:</strong> No projeto deste ano letivo, vamos explorar um tema crucial que afeta as sociedades em todo o mundo: a relação entre desigualdade social e criminalidade. A desigualdade é um problema multifacetado que permeia todos os aspectos da vida, influenciando desde as oportunidades disponíveis até a segurança dos cidadãos. Ao examinar como a desigualdade social afeta a criminalidade, estaremos mergulhando em questões fundamentais de justiça, direitos humanos e desenvolvimento socioeconômico.</p>
-    
-</div>
 
-</div>
-<div class="yellow-box">
-   <!-- Aqui você pode adicionar conteúdo para a caixa amarela -->
-   <h2>Conclusão:</h2>
-   <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais bem preparados para enfrentar esses desafios e construir sociedades mais justas e seguras para todos os seus membros.</p>
-</div>
-</div>
-    
+    <div class="container">
+        <div class="box blue-box">
+            <h1>Projeto do Ano Letivo: Impacto da Desigualdade Social na Criminalidade</h1>
+            <p><strong>Introdução:</strong> No projeto deste ano letivo, vamos explorar um tema crucial que afeta as sociedades em todo o mundo: a relação entre desigualdade social e criminalidade. A desigualdade é um problema multifacetado que permeia todos os aspectos da vida, influenciando desde as oportunidades disponíveis até a segurança dos cidadãos. Ao examinar como a desigualdade social afeta a criminalidade, estaremos mergulhando em questões fundamentais de justiça, direitos humanos e desenvolvimento socioeconômico.</p>
+        </div>
+
+        <div class="box yellow-box">
+            <h2>Conclusão:</h2>
+            <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais bem preparados para enfrentar esses desafios e construir sociedades mais justas e seguras para todos os seus membros.</p>
+        </div>
+    </div>
 </body>
+</html>
