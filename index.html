@@ -18,18 +18,17 @@
             top: 0;
             left: 0;
             width: 100%;
+            z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+            padding: 10px 30px;
+            box-sizing: border-box;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px;
-            box-sizing: border-box;
-            z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
-            margin-bottom: 20px; /* Adicionado margem à parte inferior */
         }
 
         .logo img {
-            height: 40px; /* Reduzido o tamanho da logo */
-            border-radius: 50%; /* Alterado o arredondamento da logo */
+            height: 40px;
+            border-radius: 50%;
         }
 
         .menu {
@@ -59,7 +58,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            padding-top: 80px; /* Adicionado espaço para evitar que a navbar sobreponha o conteúdo */
         }
 
         .blue-box,
@@ -70,11 +69,11 @@
             width: 80%;
             max-width: 800px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 50px; /* Adicionado espaçamento entre as caixas */
+            margin-bottom: 30px;
         }
 
         .yellow-box {
-            background-color: #fff3cd; /* Alterado para amarelo claro */
+            background-color: #fff3cd;
         }
 
         .blue-box h1 {
@@ -105,7 +104,9 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/senac.png?itok=tg53Ze-q ">
+            <a href="https://projetodoanoletivo.github.io/anoletivo/#">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/senac.png?itok=tg53Ze-q" alt="Logo">
+            </a>
         </div>
         <ul class="menu">
             <li><a href="https://projetodoanoletivo.github.io/anoletivo/#">Início</a></li>
@@ -113,13 +114,14 @@
             <li><a href="https://projetodoanoletivo.github.io/anoletivo/page3.html">Estatísticas</a></li>
         </ul>
     </nav>
+
     <div class="container">
         <div class="blue-box">
             <h1>Projeto do Ano Letivo: Impacto da Desigualdade Social na Criminalidade</h1>
             <p><strong>Introdução:</strong> No projeto deste ano letivo, vamos explorar um tema crucial que afeta as sociedades em todo o mundo: a relação entre desigualdade social e criminalidade. A desigualdade é um problema multifacetado que permeia todos os aspectos da vida, influenciando desde as oportunidades disponíveis até a segurança dos cidadãos. Ao examinar como a desigualdade social afeta a criminalidade, estaremos mergulhando em questões fundamentais de justiça, direitos humanos e desenvolvimento socioeconômico.</p>
         </div>
+
         <div class="yellow-box">
-            <!-- Aqui você pode adicionar conteúdo para a caixa amarela -->
             <h2>Conclusão:</h2>
             <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais bem preparados para enfrentar esses desafios e construir sociedades mais justas e seguras para todos os seus membros.</p>
         </div>
