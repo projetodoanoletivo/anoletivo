@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-@media (max-width: 768px) {
-    .navbar {
-        position: static; /* Alterando para 'static' em telas menores */
-    }
-}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column; /* Adicionado para empilhar elementos verticalmente */
 }
 
 .blue-box {
   background-color: #e0f2f1;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Adicionado espaçamento entre a caixa azul e amarela */
+}
+
+.yellow-box {
+  background-color: #fff3cd; /* Cor de fundo amarela */
   padding: 30px;
   border-radius: 10px;
   width: 80%;
@@ -38,6 +44,7 @@
   line-height: 1.6;
   text-align: justify;
 }
+        
         
         body {
             margin: 0;
@@ -106,4 +113,12 @@
     
 </div>
 
+</div>
+<div class="yellow-box">
+   <!-- Aqui você pode adicionar conteúdo para a caixa amarela -->
+   <h2>Conclusão:</h2>
+   <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais bem preparados para enfrentar esses desafios e construir sociedades mais justas e seguras para todos os seus membros.</p>
+</div>
+</div>
+    
 </body>
