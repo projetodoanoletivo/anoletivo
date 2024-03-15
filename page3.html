@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
         <style>
             body {
                 margin: 0;
@@ -45,6 +42,7 @@
     
             .menu li {
                 margin-right: 20px;
+                word-wrap: break-word;
             }
     
             .menu li a {
@@ -57,6 +55,96 @@
             .menu li a:hover {
                 color: rgb(194, 2, 2);
             }
+
+             /* Adicionando estilos para o menu de hambúrguer */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        /* Mostrar o menu de hambúrguer apenas em telas pequenas */
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+            .menu-toggle.active ~ .menu {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                padding: 10px;
+        }
+        .menu-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-toggle.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .menu-toggle.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 80px; /* Adicionado espaço para evitar que a navbar sobreponha o conteúdo */
+        }
+
+        .blue-box,
+        .yellow-box {
+            background-color: #e0f2f1;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .yellow-box {
+            background-color: #fff3cd;
+        }
+
+        .blue-box h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .blue-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .yellow-box h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .yellow-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
         </style>
     </head>
 <body>
@@ -73,4 +161,5 @@
 
 </body>
 </html>
+
 
