@@ -53,46 +53,56 @@
             color: rgb(194, 2, 2);
         }
 
-        /* Adicionando estilos para o menu de hambúrguer */
+        /* Estilos para o menu de hambúrguer */
         .menu-toggle {
             display: none;
             flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 25px;
             cursor: pointer;
+            z-index: 1500;
         }
 
         .menu-toggle .bar {
-            width: 25px;
+            width: 100%;
             height: 3px;
             background-color: #fff;
-            margin: 4px 0;
+            transition: all 0.3s;
+        }
+
+        .menu-toggle.active .bar:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .menu-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active .bar:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
         }
 
         /* Mostrar o menu de hambúrguer apenas em telas pequenas */
         @media screen and (max-width: 768px) {
             .menu {
                 display: none;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                padding: 20px 0;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu li {
+                margin: 10px 0;
             }
             .menu-toggle {
                 display: flex;
-            }
-            .menu-toggle.active ~ .menu {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: #333;
-                padding: 10px;
-            }
-            .menu-toggle.active .bar:nth-child(2) {
-                opacity: 0;
-            }
-            .menu-toggle.active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-            .menu-toggle.active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
             }
         }
 
@@ -172,15 +182,4 @@
 
         <div class="yellow-box">
             <h2>Conclusão:</h2>
-            <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais bem preparados para enfrentar esses desafios e construir sociedades mais justas e seguras para todos os seus membros.</p>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            var menuToggle = document.querySelector('.menu-toggle');
-            menuToggle.classList.toggle('active');
-        }
-    </script>
-</body>
-</html>
+            <p>O projeto do ano letivo sobre o impacto da desigualdade social na criminalidade visa não apenas expandir o conhecimento dos alunos sobre questões sociais complexas, mas também capacitá-los a se tornarem agentes de mudança em suas comunidades. Ao compreendermos as raízes da criminalidade em contextos de desigualdade, estaremos mais
